@@ -6,7 +6,7 @@
   <title>Alabo MacPepple-Jaja — Computing & AI Lecturer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     * {
@@ -20,17 +20,17 @@
     }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      line-height: 1.6;
-      color: #1a1a1a;
-      background: #fafafa;
+      font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.7;
+      color: #f0f0f0;
+      background: #0a0a0a;
     }
 
     /* Header */
     header {
-      background: white;
-      padding: 3rem 1.5rem;
-      border-bottom: 1px solid #e5e5e5;
+      background: #0a0a0a;
+      padding: 5rem 1.5rem 3rem;
+      border-bottom: 1px solid #1a1a1a;
       position: sticky;
       top: 0;
       z-index: 100;
@@ -42,25 +42,27 @@
     }
 
     h1 {
-      font-size: 2rem;
+      font-size: 2.8rem;
       font-weight: 700;
-      margin-bottom: 0.25rem;
-      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.03em;
+      color: #ffffff;
     }
 
     .title {
-      font-size: 1rem;
-      color: #666;
+      font-size: 1.1rem;
+      color: #999;
       font-weight: 500;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2.5rem;
+      letter-spacing: 0.5px;
     }
 
     .contact-info {
       display: flex;
       flex-wrap: wrap;
-      gap: 1.5rem;
+      gap: 2.5rem;
       font-size: 0.95rem;
-      color: #555;
+      color: #aaa;
     }
 
     .contact-item {
@@ -69,87 +71,93 @@
     }
 
     .contact-item a {
-      color: #0066cc;
+      color: #d4af37;
       text-decoration: none;
-      transition: color 0.2s;
+      transition: color 0.3s;
+      font-weight: 500;
     }
 
     .contact-item a:hover {
-      color: #0052a3;
+      color: #e8c547;
     }
 
     /* Main content */
     main {
       max-width: 900px;
       margin: 0 auto;
-      padding: 3rem 1.5rem;
+      padding: 5rem 1.5rem;
     }
 
     section {
-      margin-bottom: 4rem;
+      margin-bottom: 6rem;
     }
 
     section h2 {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       font-weight: 700;
-      margin-bottom: 1.5rem;
-      padding-bottom: 1rem;
-      border-bottom: 2px solid #f0f0f0;
-      letter-spacing: -0.01em;
+      margin-bottom: 2.5rem;
+      color: #ffffff;
+      letter-spacing: -0.02em;
     }
 
     /* About */
     .about-text {
       font-size: 1.05rem;
-      line-height: 1.8;
-      color: #333;
+      line-height: 1.95;
+      color: #c0c0c0;
+      max-width: 750px;
     }
 
     /* Projects */
     .projects-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 2rem;
+      gap: 3.5rem;
     }
 
     .project-card {
-      background: white;
-      padding: 2rem;
-      border: 1px solid #e5e5e5;
-      border-radius: 4px;
+      background: transparent;
+      padding: 0;
+      border: none;
+      border-left: 2px solid #d4af37;
+      padding-left: 2.5rem;
     }
 
     .project-card h3 {
-      font-size: 1.3rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+      color: #ffffff;
     }
 
     .project-tech {
       font-size: 0.85rem;
       color: #888;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
     }
 
     .project-description {
-      font-size: 0.95rem;
-      line-height: 1.7;
-      color: #555;
-      margin-bottom: 1.5rem;
+      font-size: 1rem;
+      line-height: 1.85;
+      color: #b8b8b8;
+      margin-bottom: 2rem;
     }
 
     .project-media {
-      background: #f8f8f8;
-      border-radius: 4px;
-      padding: 1rem;
-      margin-bottom: 1.5rem;
-      min-height: 80px;
+      background: #1a1a1a;
+      border-radius: 2px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      min-height: 100px;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 0.85rem;
-      color: #999;
+      color: #666;
+      border: 1px solid #2a2a2a;
     }
 
     audio {
@@ -159,26 +167,29 @@
 
     .project-links {
       display: flex;
-      gap: 1.5rem;
-      font-size: 0.9rem;
+      gap: 2rem;
+      font-size: 0.95rem;
     }
 
     .project-links a {
-      color: #0066cc;
+      color: #d4af37;
       text-decoration: none;
-      transition: color 0.2s;
+      transition: color 0.3s;
       display: inline-flex;
       align-items: center;
+      font-weight: 500;
     }
 
     .project-links a:hover {
-      color: #0052a3;
+      color: #e8c547;
     }
 
     /* Education */
     .education-item {
-      padding: 1rem 0;
-      border-bottom: 1px solid #f0f0f0;
+      padding: 2rem 0;
+      border-bottom: 1px solid #1a1a1a;
+      padding-left: 2.5rem;
+      border-left: 2px solid #333;
     }
 
     .education-item:last-child {
@@ -186,104 +197,123 @@
     }
 
     .education-item h4 {
-      font-size: 1rem;
-      font-weight: 600;
-      margin-bottom: 0.25rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #ffffff;
     }
 
     .education-school {
-      font-size: 0.9rem;
-      color: #666;
-      margin-bottom: 0.25rem;
+      font-size: 0.95rem;
+      color: #999;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
     }
 
     .education-year {
       font-size: 0.85rem;
-      color: #999;
+      color: #666;
+      letter-spacing: 1px;
     }
 
     /* Skills */
     .skills-section {
       display: grid;
-      grid-template-columns: 1fr;
-      gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
     }
 
     .skill-category {
-      padding: 1.5rem;
-      background: white;
-      border: 1px solid #e5e5e5;
-      border-radius: 4px;
+      padding: 2rem;
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 2px;
     }
 
     .skill-category h4 {
       font-size: 1rem;
-      font-weight: 600;
-      margin-bottom: 0.75rem;
-      color: #1a1a1a;
+      font-weight: 700;
+      margin-bottom: 1.2rem;
+      color: #ffffff;
+      letter-spacing: 1px;
     }
 
     .skill-list {
       font-size: 0.95rem;
-      color: #555;
-      line-height: 1.7;
+      color: #b0b0b0;
+      line-height: 1.8;
     }
 
     /* Footer */
     footer {
-      background: white;
-      border-top: 1px solid #e5e5e5;
-      padding: 2rem 1.5rem;
+      background: #0a0a0a;
+      border-top: 1px solid #1a1a1a;
+      padding: 4rem 1.5rem;
       text-align: center;
-      color: #888;
+      color: #666;
       font-size: 0.9rem;
     }
 
     .footer-links {
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
 
     .footer-links a {
-      color: #0066cc;
+      color: #d4af37;
       text-decoration: none;
-      margin: 0 1rem;
-      transition: color 0.2s;
+      margin: 0 1.5rem;
+      transition: color 0.3s;
+      font-weight: 500;
     }
 
     .footer-links a:hover {
-      color: #0052a3;
+      color: #e8c547;
     }
 
     /* Responsive */
     @media (max-width: 768px) {
       h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
       }
 
       .title {
-        font-size: 0.95rem;
+        font-size: 1rem;
       }
 
       .contact-info {
-        gap: 1rem;
+        gap: 1.5rem;
         font-size: 0.9rem;
       }
 
       main {
-        padding: 2rem 1rem;
+        padding: 3rem 1rem;
+      }
+
+      section {
+        margin-bottom: 4rem;
       }
 
       section h2 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
       }
 
       .skills-section {
         grid-template-columns: 1fr;
+        gap: 2rem;
       }
 
       .project-links {
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 1rem;
+      }
+
+      .project-card {
+        padding-left: 1.5rem;
+      }
+
+      .education-item {
+        padding-left: 1.5rem;
       }
     }
   </style>
