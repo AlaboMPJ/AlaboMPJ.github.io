@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alabo MacPepple-Jaja — Computing & AI Lecturer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background: #fafafa;
+    }
+
+    /* Header */
+    header {
+      background: white;
+      padding: 3rem 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+      letter-spacing: -0.02em;
+    }
+
+    .title {
+      font-size: 1rem;
+      color: #666;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+    }
+
+    .contact-item a {
+      color: #0066cc;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .contact-item a:hover {
+      color: #0052a3;
+    }
+
+    /* Main content */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    section h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid #f0f0f0;
+      letter-spacing: -0.01em;
+    }
+
+    /* About */
+    .about-text {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    /* Projects */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: white;
+      padding: 2rem;
+      border: 1px solid #e5e5e5;
+      border-radius: 4px;
+    }
+
+    .project-card h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-tech {
+      font-size: 0.85rem;
+      color: #888;
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+
+    .project-description {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+
+    .project-media {
+      background: #f8f8f8;
+      border-radius: 4px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      color: #999;
+    }
+
+    audio {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .project-links a {
+      color: #0066cc;
+      text-decoration: none;
+      transition: color 0.2s;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .project-links a:hover {
+      color: #0052a3;
+    }
+
+    /* Education */
+    .education-item {
+      padding: 1rem 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .education-item:last-child {
+      border-bottom: none;
+    }
+
+    .education-item h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .education-school {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 0.25rem;
+    }
+
+    .education-year {
+      font-size: 0.85rem;
+      color: #999;
+    }
+
+    /* Skills */
+    .skills-section {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .skill-category {
+      padding: 1.5rem;
+      background: white;
+      border: 1px solid #e5e5e5;
+      border-radius: 4px;
+    }
+
+    .skill-category h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: #1a1a1a;
+    }
+
+    .skill-list {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.7;
+    }
+
+    /* Footer */
+    footer {
+      background: white;
+      border-top: 1px solid #e5e5e5;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    .footer-links {
+      margin-bottom: 1rem;
+    }
+
+    .footer-links a {
+      color: #0066cc;
+      text-decoration: none;
+      margin: 0 1rem;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: #0052a3;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .title {
+        font-size: 0.95rem;
+      }
+
+      .contact-info {
+        gap: 1rem;
+        font-size: 0.9rem;
+      }
+
+      main {
+        padding: 2rem 1rem;
+      }
+
+      section h2 {
+        font-size: 1.25rem;
+      }
+
+      .skills-section {
+        grid-template-columns: 1fr;
+      }
+
+      .project-links {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Alabo MacPepple-Jaja</h1>
+      <p class="title">Lecturer in Computing, AI & Creative Technologies</p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <a href="mailto:Bomac1193@gmail.com">Bomac1193@gmail.com</a>
+        </div>
+        <div class="contact-item">+44 7943 682176</div>
+        <div class="contact-item">Greenwich, London</div>
+        <div class="contact-item">
+          <a href="https://github.com/AlaboMPJ" target="_blank">github.com/AlaboMPJ</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About</h2>
+      <p class="about-text">
+        PGCE-qualified Computing and Creative Technology Lecturer with a Music Computing degree from Goldsmiths, University of London. Specialises in applied AI, generative audio systems, and creative coding across post-16 and secondary education. Active research practice spanning AI-driven audio synthesis, archival machine learning systems, and interactive sound design.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <!-- PERI Project -->
+        <div class="project-card">
+          <h3>PERI — AI Archival Collaborator</h3>
+          <div class="project-tech">Max/MSP, RAVE, Python</div>
+          <p class="project-description">
+            Trained a RAVE neural audio synthesis model on a 60-hour corpus of his late father's vocal recordings and archive material to create a posthumous AI collaborator. A project operating at the intersection of machine learning, archival practice, cultural preservation, and creative expression.
+          </p>
+          <div class="project-media">
+            <audio controls>
+              <source src="" type="audio/mpeg">
+              <!-- Replace src with PERI audio demo file -->
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AlaboMPJ/PERI" target="_blank">→ View on GitHub</a>
+          </div>
+        </div>
+
+        <!-- Audiogen Project -->
+        <div class="project-card">
+          <h3>Audiogen — AI Audio Generation Studio</h3>
+          <div class="project-tech">Next.js, OpenAI API, Stability AI</div>
+          <p class="project-description">
+            A full-stack Next.js audio generation studio integrating OpenAI and Stability AI endpoints, with custom synthesis parameters for sound design including texture, brightness, and intensity controls.
+          </p>
+          <div class="project-media">
+            <audio controls>
+              <source src="" type="audio/mpeg">
+              <!-- Replace src with Audiogen audio demo or screenshot -->
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AlaboMPJ/Audiogen" target="_blank">→ View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="education-item">
+        <h4>PGCE in Computing Science</h4>
+        <div class="education-school">University of East London</div>
+        <div class="education-year">2024</div>
+      </div>
+      <div class="education-item">
+        <h4>BMus (Hons) Music Computing</h4>
+        <div class="education-school">Goldsmiths, University of London</div>
+        <div class="education-year">2017</div>
+      </div>
+      <div class="education-item">
+        <h4>Thesis</h4>
+        <div class="education-school">Dandyism (Taste/Aesthetics) & Post-Colonial Musicology</div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="skills-section">
+        <div class="skill-category">
+          <h4>Applied AI</h4>
+          <div class="skill-list">
+            RAVE neural audio synthesis, generative media systems, LLM-assisted workflows
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Audio & Interactive Systems</h4>
+          <div class="skill-list">
+            Max/MSP, Max for Live, spectral processing, generative audio
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Software & Creative Coding</h4>
+          <div class="skill-list">
+            Python, JavaScript, Next.js, React, Blender
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Pedagogy</h4>
+          <div class="skill-list">
+            Curriculum design, assessment design, digital pedagogy, inclusive teaching
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="mailto:Bomac1193@gmail.com">Email</a>
+      <a href="https://github.com/AlaboMPJ" target="_blank">GitHub</a>
+    </div>
+    <p>© 2026 Alabo MacPepple-Jaja</p>
+  </footer>
+</body>
+</html>
